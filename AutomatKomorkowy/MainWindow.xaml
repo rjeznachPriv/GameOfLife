@@ -1,0 +1,20 @@
+﻿<Window x:Class="AutomatKomorkowy.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AutomatKomorkowy"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <DockPanel LastChildFill="True" Grid.ColumnSpan="2">
+            <Button Content="Generate Conway 20x20" Width="NaN" VerticalAlignment="Top" HorizontalAlignment="Left" Click="Generate_Conway_20_20"/>
+            <Button Content="Generate Conway 40x40" Width="NaN" VerticalAlignment="Top" HorizontalAlignment="Left" Click="Generate_Conway_40_40"/>
+            <Button Content="Generate Bigger 20x20" Width="NaN" VerticalAlignment="Top" HorizontalAlignment="Left" Click="Generate_Bigger_20_20"/>
+            <Button Content="Step" Width="NaN" VerticalAlignment="Top" HorizontalAlignment="Left" Click="Step_click"/>
+            <Button Content="START" Width="NaN" Click="Start_click" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+            <Button Content="STOP" Width="NaN" Click="Sop_click" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+        </DockPanel>
+        <Canvas x:Name="Canvas" DockPanel.Dock="Top" MouseDown="Canvas_MouseDown" MouseMove="Canvas_MouseMove" Margin="158,78,0,0"/>
+    </Grid>
+</Window>
