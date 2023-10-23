@@ -37,8 +37,6 @@ namespace Automat.Logic.Tests
             int[,] area = JsonConvert.DeserializeObject<int[,]>(areaJSON);
             var actualResult = _calculator.Calculate(area);
 
-            Assert.That(actualResult, Is.GreaterThanOrEqualTo(0));
-            Assert.That(actualResult, Is.LessThanOrEqualTo(1));
             Assert.That(actualResult, Is.EqualTo(expectedResult));
         }
     }

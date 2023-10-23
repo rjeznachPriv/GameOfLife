@@ -62,6 +62,20 @@ namespace AutomatKomorkowy
             }
         }
 
+        private void UpdateCanvasWithCustomColors(Game game)
+        {
+            Canvas.Children.Clear();
+
+            for (var y = 0; y < game.Height; y++)
+            {
+                for (var x = 0; x < game.Width; x++)
+                {
+                    //var a = Color.From
+                    //PutRectangle(x,y, Color. game.Board[x,y]);
+                }
+            }
+        }
+
         private void PrepareCanvas(Game game)
         {
             Canvas.Background = Brushes.LightSteelBlue;
@@ -161,6 +175,14 @@ namespace AutomatKomorkowy
         private void Generate_Bigger_20_20(object sender, RoutedEventArgs e)
         {
             _game = new Game(20, new BiggerCalculator());
+
+            PrepareCanvas(_game);
+            UpdateCanvas(_game);
+        }
+
+        private void Generate_Colorful_40_40(object sender, RoutedEventArgs e)
+        {
+            _game = new Game(40, new ColorfulCalculator());
 
             PrepareCanvas(_game);
             UpdateCanvas(_game);

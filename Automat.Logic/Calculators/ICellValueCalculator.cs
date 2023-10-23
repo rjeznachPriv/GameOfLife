@@ -1,5 +1,6 @@
 ﻿namespace Automat.Logic.Calculators
 {
+
     public interface ICellValueCalculator
     {
         public int GetRangetHeight();

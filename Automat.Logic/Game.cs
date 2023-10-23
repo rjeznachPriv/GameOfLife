@@ -58,7 +58,7 @@ namespace Automat.Logic
                 }
             }
 
-            Board = newBoard;       // TODO: ref? value?
+            Board = newBoard;
 
             GameAdvancedBy1Step(this, EventArgs.Empty);
             return 0;
@@ -90,6 +90,7 @@ namespace Automat.Logic
             return area;
         }
 
+        // Used when setting initial state by mouse pointer.
         public void ShiftConwayField(Tuple<int, int> coordinates)
         {
             Board[coordinates.Item1, coordinates.Item2] = 1 - Board[coordinates.Item1, coordinates.Item2];

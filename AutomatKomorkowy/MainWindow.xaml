@@ -11,6 +11,7 @@
             <Button Content="Generate Conway 20x20" Width="NaN" VerticalAlignment="Top" HorizontalAlignment="Left" Click="Generate_Conway_20_20"/>
             <Button Content="Generate Conway 40x40" Width="NaN" VerticalAlignment="Top" HorizontalAlignment="Left" Click="Generate_Conway_40_40"/>
             <Button Content="Generate Bigger 20x20" Width="NaN" VerticalAlignment="Top" HorizontalAlignment="Left" Click="Generate_Bigger_20_20"/>
+            <Button Content="Generate COLORFUL 40x40" Width="NaN" VerticalAlignment="Top" HorizontalAlignment="Left" Click="Generate_Colorful_40_40"/>
             <Button Content="Step" Width="NaN" VerticalAlignment="Top" HorizontalAlignment="Left" Click="Step_click"/>
             <Button Content="START" Width="NaN" Click="Start_click" VerticalAlignment="Top" HorizontalAlignment="Left"/>
             <Button Content="STOP" Width="NaN" Click="Sop_click" VerticalAlignment="Top" HorizontalAlignment="Left"/>
